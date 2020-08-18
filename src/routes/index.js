@@ -20,10 +20,12 @@ const tabHomeNavigation = () => {
     <Tab.Navigator
       tabBarOptions={{
         style: {
-          paddingVertical: 3,
-          backgroundColor: '#03a9f4'
+          paddingVertical: 4,
+          backgroundColor: '#03a9f4',
+          paddingBottom: 6,
+          height: 64,
         },
-        inactiveTintColor: '#bbb',
+        inactiveTintColor: 'rgba(255, 255, 255, 0.5)',
         activeTintColor: '#fff',
         labelStyle: {
           fontSize: 14,
@@ -34,14 +36,14 @@ const tabHomeNavigation = () => {
         options={{
           tabBarIcon: ({ color }) => <MaterialIcons name="directions-car" size={24} color={color} />
         }}
-        name="Cars"
+        name="Carros"
         component={List}
       />
       <Tab.Screen
         options={{
           tabBarIcon: ({ color }) => <MaterialIcons name="directions-car" size={24} color={color} />
         }}
-        name="Add"
+        name="Adicionar"
         component={Add}
       />
       <Tab.Screen
@@ -53,14 +55,14 @@ const tabHomeNavigation = () => {
             </View>
           )
         }}
-        name="Cart"
+        name="Carrinho"
         component={Cart}
       />
     </Tab.Navigator>
   )
 }
 
-export default function App() {
+export default function Routes() {
   return (
     <NavigationContainer>
       <Stack.Navigator
