@@ -62,7 +62,7 @@ const tabHomeNavigation = () => {
   )
 }
 
-export default function Routes() {
+function Routes() {
   return (
     <NavigationContainer>
       <Stack.Navigator
@@ -78,3 +78,5 @@ export default function Routes() {
     </NavigationContainer>
   )
 }
+
+export default Routes
